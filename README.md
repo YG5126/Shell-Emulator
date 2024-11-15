@@ -50,7 +50,7 @@ pytest test.py -v
 ## cd
 ![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/cd.png)
 ## exit
-![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/exit.gif)
+![](https://github.com/YG5126/Shell-Emulator/blob/main/Test/Test_exit.png)
 ## touch
 ![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/tou%D1%81%D1%80.png)
 ## uname
