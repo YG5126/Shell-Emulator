@@ -30,16 +30,17 @@ def test_cd_1(terminal):
     assert terminal.cd([]) == ""
 
 def test_cd_2(terminal):
-    assert terminal.cd(["dir_1/.."]) == ""
+    assert terminal.cd(["Yesenin_s_dir_1/.."]) == ""
 
 def test_cd_3(terminal):
-    assert terminal.cd(["dir_1"]) == "dir_1/"
+    terminal.cd([])
+    assert terminal.cd(["Yesenin_s_dir_1"]) == "Yesenin_s_dir_1/"
 
 def test_ls_1(terminal):
     assert NoneType
 
 def test_ls_2(terminal):
-    terminal.path = terminal.cd(["dir_1"])
+    terminal.path = terminal.cd(["Yesenin_s_dir_1"])
     assert NoneType
 
 def test_ls_3(terminal):
