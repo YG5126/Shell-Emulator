@@ -53,16 +53,16 @@ pytest test.py -v
 
 # Тесты
 ## ls
-![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/ls.png)
+![](https://github.com/YG5126/Shell-Emulator/blob/main/Test/Test_ls.png)
 ## cd
-![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/cd.png)
+![](https://github.com/YG5126/Shell-Emulator/blob/main/Test/Test_cd.png)
 ## exit
 ![](https://github.com/YG5126/Shell-Emulator/blob/main/Test/Test_exit.png)
 ## touch
-![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/tou%D1%81%D1%80.png)
+![](https://github.com/YG5126/Shell-Emulator/blob/main/Test/Test_touch.png)
 ## uname
-![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/cat.png)
+![](https://github.com/YG5126/Shell-Emulator/blob/main/Test/Test_uname.png)
 ## rev
-![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/cat.png)
+![](https://github.com/YG5126/Shell-Emulator/blob/main/Test/Test_rev.png)
 ## Общие тесты через pytest
 ![](https://github.com/DrTECHNIC/Shell_Emulator/blob/main/pytest.png)
