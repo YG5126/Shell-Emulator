@@ -89,19 +89,25 @@ class Terminal:
             self.application.print("Работа данной команды не предусмотрена в данном эмуляторе.", "error")
 
     def ls(self, args):
-        work_dir = self.path
-        if len(args) > 0:
-            work_dir = self.cd(args[-1])
-            if work_dir is None:
-                self.application.print("", "command")
-        items = set()
-        for item in self.filesystem.namelist():
-            if item.startswith(work_dir):
-                ls_name = item[len(work_dir):]
-                if "/" in ls_name:
-                    ls_name = ls_name[:ls_name.index("/")]
-                items.add(ls_name)
-        self.application.print('\n'.join(sorted(filter(lambda x: len(x) > 0, items))), "command")
+        try:
+            work_dir = self.path
+            if len(args) > 0:
+                work_dir = self.cd(args[-1])
+                if work_dir is None:
+                    self.application.print("", "command")
+                    return
+            items = set()
+            for item in self.filesystem.namelist():
+                if item.startswith(work_dir):
+                    ls_name = item[len(work_dir):]
+                    if "/" in ls_name:
+                        ls_name = ls_name[:ls_name.index("/")]
+                    items.add(ls_name)
+            self.application.print('\n'.join(sorted(filter(lambda x: len(x) > 0, items))), "command")
+        except TypeError:
+            self.application.print("", "command")
+        except Exception:
+            self.application.print("", "command")
 
     def cd(self, args):
         if len(args) == 0:
